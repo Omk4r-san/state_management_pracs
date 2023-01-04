@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pkg/Ui/bottom_navbar_screen.dart';
-import 'package:flutter_pkg/flutter_pkg.dart';
-import 'package:flutter_pkg/Ui/top_aricles_screen.dart';
+
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:trail_app/screens/app_start/app_start_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

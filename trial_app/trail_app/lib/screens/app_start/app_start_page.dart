@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter_pkg/Ui/bottom_navbar_screen.dart';
-import 'package:trail_app/screens/home/home_screen.dart';
+import 'package:trail_app/screens/home/test_screen.dart';
 
 class AppStartPage extends StatefulWidget {
   const AppStartPage({super.key});
@@ -17,13 +16,13 @@ class _AppStartPageState extends State<AppStartPage> {
     return BottomNavBarScreen(
       builder: (context, tabItem) {
         if (tabItem == TabItem.home) {
-          return TextScreen(title: "Home");
+          return const TextScreen(title: "Home");
         } else if (tabItem == TabItem.search) {
-          return TextScreen(title: "Search");
+          return const TextScreen(title: "Search");
         } else if (tabItem == TabItem.bookMarks) {
-          return TextScreen(title: "bookMarks");
+          return const TextScreen(title: "bookMarks");
         } else {
-          return TextScreen(title: "Profile");
+          return const TextScreen(title: "Profile");
         }
       },
     );
